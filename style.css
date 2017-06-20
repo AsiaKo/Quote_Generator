@@ -1,0 +1,91 @@
+html, body {
+ margin: 0;
+ padding: 0;
+ width: 100%;
+ min-height: 100%;
+}
+
+body  { 
+  position: relative;
+  background: #c9dbe9
+  background: linear-gradient(top, #8695BF 0%,  #C0C8E0 100%);
+  background: -webkit-linear-gradient(top, #8695BF 0%,  #C0C8E0 100%);
+  background: -moz-linear-gradient(top, #8695BF 0%,  #C0C8E0 100%);
+  }
+
+.logo, img{
+  border: 1px solid white;
+  margin-left: 35px;
+  border-radius: 20px;
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.5);
+}
+img {
+  display: inline-block;
+  margin: 20px auto; 
+}
+
+.container-fluid h1  {
+  font-size: 30px;
+  font-family: "open sans";
+  color: #fff;
+  }
+  
+#Quote_Pic {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.3); /*10px 5px 10px 0 rgba(0, 0, 0, 0.30);
+  border-radius: 10px;*/
+  padding: 3px;
+  margin-bottom: 45px;
+}
+
+/*animation for card here  - flip/rotate on refresh */
+
+.container-fluid button {
+  background: #e0b3cc; 
+  width: 150px;
+  border-radius: 7px;
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.3); 
+  margin-top: 25px;
+  padding-left: 0;
+}
+
+.container-fluid button:hover {
+  background-color: #C9A1B7;
+  transform: scale(1.03);
+  transition-duration:300ms;
+
+}
+
+ul.share-icon {
+    margin-top: 25px;   
+    padding-left: 0;  /*to center icons*/
+}
+
+.share-icon li {
+    display: inline;      
+}
+
+.share-icon a, li{
+    color:#fff;
+    text-decoration: none;
+   }
+
+.share-icon a {
+  padding-left: 0;
+}
+
+i.fa-facebook:hover {
+ color: #3b5998;
+}
+
+i.fa-twitter:hover {
+ color: #0084b4;
+}
+
+i.fa-refresh:hover  {
+  color: #009900;
+}
+
+
+
+
+
