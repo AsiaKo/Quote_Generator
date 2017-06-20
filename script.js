@@ -21,19 +21,19 @@ function newQuote() {
 // Post to facebook 
 document.getElementById("facebook").onclick = postFB;
 function postFB() {
-  var postQuote = document.getElementById("Quote_Pic").src;
-  var url = "http://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(postQuote);
+  var url = "http://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(quotes[randomQuote]);
   window.open(url);
 }
 
 // Tweet quote 
 document.getElementById("tweeter").onclick = tweet;
 function tweet() {
-  var tweetQuote = document.getElementById("Quote_Pic").src;
- 
-  var url = "http://twitter.com/share?text=" + encodeURIComponent('Enjoy this Quote Card ' + tweetQuote);
+  var url = "http://twitter.com/share?text=" + encodeURIComponent('Enjoy this Quote Card ' + quotes[randomQuote]);
   window.open(url);
 }
+
+
+
 
 
 
