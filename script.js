@@ -13,26 +13,26 @@
 
 // Refresh quote 
 document.getElementById("refresh").onclick = newQuote;
+
 function newQuote() {
-  var randomQuote = Math.floor(Math.random() * (quotes.length));
-  document.getElementById('Quote_Pic').src = quotes[randomQuote];
+	var randomQuote = Math.floor(Math.random() * (quotes.length));
+	document.getElementById('Quote_Pic').src = quotes[randomQuote];
+
+	// Post to facebook 
+	document.getElementById("facebook").onclick = postFB;
+	function postFB() {
+	  var url = "http://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(quotes[randomQuote]);
+	  window.open(url);
+	}
+
+	// Tweet quote 
+	document.getElementById("tweeter").onclick = tweet;
+	function tweet() {
+	  var url = "http://twitter.com/share?text=" + encodeURIComponent('Enjoy this Quote Card ' + quotes[randomQuote]);
+	  window.open(url);
+	}
+
 }
-
-// Post to facebook 
-document.getElementById("facebook").onclick = postFB;
-function postFB() {
-  var url = "http://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(quotes[randomQuote]);
-  window.open(url);
-}
-
-// Tweet quote 
-document.getElementById("tweeter").onclick = tweet;
-function tweet() {
-  var url = "http://twitter.com/share?text=" + encodeURIComponent('Enjoy this Quote Card ' + quotes[randomQuote]);
-  window.open(url);
-}
-
-
 
 
 
